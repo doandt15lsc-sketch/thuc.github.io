@@ -8,6 +8,20 @@
         <title>Portfolio | Dang Thuc Doan</title>
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+        <style>
+            /* Ẩn ảnh Avatar nam giới */
+            .masthead-avatar {
+                display: none; 
+            }
+            /* Đặt GIF quả táo (đã được chèn bằng code trước) vào vị trí chính giữa, phía trên tên */
+            .masthead-avatar-replacement {
+                margin-bottom: 3rem !important; /* Tạo khoảng cách giống như avatar cũ */
+                display: block; 
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
     </head>
     <body id="page-top">
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
@@ -29,6 +43,11 @@
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="Dang Thuc Doan Avatar" />
+
+                <p align="center" class="masthead-avatar-replacement">
+                    <img src="icegif-500.gif" alt="Welcome GIF" width="200" />
+                </p>
+                
                 <h1 class="masthead-heading text-uppercase mb-0">DANG THUC DOAN</h1>
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -36,10 +55,6 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <p class="masthead-subheading font-weight-light mb-4">UI/UX Explorer | Digital Storyteller | Culture Tech Enthusiast</p>
-                
-                <p align="center">
-                    <img src="icegif-500.gif" alt="Welcome GIF" width="200" />
-                </p>
                 
             </div>
         </header>
